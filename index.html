@@ -1,15 +1,226 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title> WSC Creations | Profile Name </title>
+	
 
-<html lang="en">
-	<head>
+		<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+		<script src = "js/lightbox-plus-jquery.min.js"></script> 
+	<style>	
+		body{
+			margin:2%;
+		}
 		
-		<meta charset="UTF-8">
-		<title> Introduction to CSS </title>
-		
-	</head>
-	<body>
-		<h1>Hello world</h1>
+		.dp {width:30%;
+			height:30vh;
+			border-radius:50%;
+			margin-left:35%;}
+
+		#info{font-size: 150%;
+			text-align: center;
+		}
+
+		.det{
+			font-size: 115%;
+			width:100%;
+			border: 1px solid black; 
+		}
+
+		.wrk-images{
+			display: inline-block;
+			width:75%;
+			height:70vh;
+			margin-left:12.5%;
+		}
+
+		.wrk-images:hover{
+			filter: grayscale(75%);
+			transform:scale(1.1);
+			transition-duration: 1s;
+		}
 
 		
-	</body>
+		.heading{
+			text-align: center;
+			font-family: Comic Sans MS, Comic Sans, cursive;
+			font-size: 150%;
+		}
+
+		.youtube{
+			margin-right:3%;
+			width:100%;
+		}
+
+		.first-row{
+			height:50px;
+			width:45%;
+			margin-left: 28%;
+		}
+
+		.second-row{
+			height:50px;
+			width:45%;
+			margin-left: 28%;
+		}
+
+
+		.third-row{
+			height:50px;
+			width:100%;
+
+		}
+
+	.button{
+		width:100px;
+		height:35px;
+		margin-top: 10vh;
+		margin-left:50%;
+		background-color: #6DEDD4;
+		border:0px;
+	}
+
+	.button:hover{
+		background-color: #0FD8B1;
+	}
+
+	.logos{
+		width:40px;
+		height:40px;
+		display: inline-block;
+		margin-left:5%;
+		margin-top: 0px;
+	}
+
+	.w3-button-w3-display-right
+
+	{
+		float:right;
+	}
+
+	span{
+		color:#182FCE;
+	}
+
+	.table{margin-left: 45%;}
+
+	
+	</style>
+</head>
+<body>
+	<header>
+		<section><img class="dp" src="images/family/1.jpg">
+		</section>
+		<section id="info">
+			Edward Louis<br>
+			Actor<br>
+			Louis.eddy@hotmail.com<br>
+			+32-23434342<br>
+			New Dallas, Texas, United States
+		</section>
+	</header>
+<hr>
+	<section>
+		<h1 class="heading"> I am </h1>
+		<details>
+  <summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. <span>Show More</span></summary>
+  <p><table class="table">
+  		<tr><td>Age</td><td>26</td></tr>
+  		<tr><td>Height</td><td>5.5 inches</td></tr>
+  		<tr><td>Vitals</td><td>32-26-34</td></tr>
+  		<tr><td>Hair</td><td>Brown</td></tr>
+  		<tr><td>Complexion</td><td>Wheatish</td></tr>
+  		<tr><td>Shoe Size</td><td>6</td></tr>
+  </table></p>
+	   </details>
+	</section>
+	<hr>
+	<section>
+		<h1 class="heading"> Glimpse of Work</h1>
+		<a href="images/family/1.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/1.jpg" onclick="onClick(this)";></a>
+		<a href="images/family/2.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/2.jpg" onclick="onClick(this)";></a>
+		<a href="images/family/3.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/3.jpg" onclick="onClick(this)";></a>
+		<a href="images/family/4.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/4.jpg" onclick="onClick(this)";></a>
+		<a href="images/family/5.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/5.jpg" onclick="onClick(this)";></a>
+		
+		<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095; </button>
+	</section>
+	<hr>
+	<section>
+		<h1 class="heading">Videos and Others Works</h1>
+		<iframe width="360" height="200" src="https://www.youtube.com/embed/l6AEqnzw79s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+		<iframe width="360" height="200" src="https://www.youtube.com/embed/1Am2068mCH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+		<iframe width="360" height="200" src="https://www.youtube.com/embed/v59IU5rOvmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube"></iframe>
+	</section>
+	<hr>
+	<section>
+		<h1 class="heading"> Contact Me</h1>
+		<form>
+			<input type="text" name="name" placeholder="Name" class="first-row">
+			<br>
+			<br>
+			<br>
+			<input type="number" name="number" placeholder="Phone Number" class="first-row">
+			<br>
+			<br>
+			<br>
+			<input type="email" name="email" placeholder="abc@email.com" class="second-row">
+			<br>
+			<br>
+			<br>
+			<br>
+			<input type="text" name="city" placeholder="City" class="second-row">
+			<br>
+			<br>
+			<br>
+			<input type="textarea" name="purpose" placeholder="Example: I want to connect for brand photoshoot" class="third-row">
+			<input type="button" name="submit" value="Submit" height="30px" width="15px" class="button">
+		</form>
+	</section>
+	<br>
+	<br>
+	<hr>
+	<footer>
+		<h1 class="heading"> Follow Me On</h1>
+		<a href="#"><img src="images/twitter.png" class="logos" height="50px" width="50px"></a>
+		<a href="#"><img src="images/fb.png" class="logos"></a>
+		<a href="#"><img src="images/insta.png" class="logos"></a>
+		<a href="#"><img src="images/youtube.png" class="logos"></a>
+		<a href="#"><img style="float:right;margin-right: 5%;" src="images/wsc.jpg" title="Widespread Creation" class="logos" alt="Wisespread Creation" height="200px" width="200px"></a>
+		
+	</footer>
+<script>
+
+	var slideIndex = 1;
+
+	showDivs(slideIndex);
+
+	function plusDivs(n)
+	{
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n)
+	{
+		var i;
+  	var x = document.getElementsByClassName("wrk-images");
+  	if (n > x.length) {slideIndex = 1}
+  	if (n < 1) {slideIndex = x.length} ;
+  	for (i = 0; i < x.length; i++) {
+    	x[i].style.display = "none";
+  		}
+  		x[slideIndex-1].style.display = "block";
+	}
+
+	function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+</script>
+
+</body>
 </html>
