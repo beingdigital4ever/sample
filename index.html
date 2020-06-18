@@ -5,10 +5,12 @@
 	
 
 		<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 		<script src = "js/lightbox-plus-jquery.min.js"></script> 
 	<style>	
 		body{
 			margin:2%;
+			background-color:#F9B956;
 		}
 		
 		.dp {width:30%;
@@ -28,9 +30,10 @@
 
 		.wrk-images{
 			display: inline-block;
-			width:75%;
-			height:70vh;
-			margin-left:12.5%;
+			width:50%;
+			height:auto;
+			max-height: 500px;
+			margin-left:25%;
 		}
 
 		.wrk-images:hover{
@@ -73,10 +76,10 @@
 	.button{
 		width:100px;
 		height:35px;
+		margin-top: 2vh;
 		margin-left:50%;
 		background-color: #6DEDD4;
 		border:0px;
-		margin-top:2vh;
 	}
 
 	.button:hover{
@@ -84,11 +87,12 @@
 	}
 
 	.logos{
-		width:40px;
-		height:40px;
+		border:0px solid black;
+		width:50px;
+		height:50px;
 		display: inline-block;
 		margin-left:5%;
-		margin-top: 0px;
+		margin-top: 80px;
 	}
 
 	.w3-button-w3-display-right
@@ -103,12 +107,29 @@
 
 	.table{margin-left: 45%;}
 
-	
+	.wsc{float:right;
+		margin-right: 1%; 
+		width:200px; 
+		height:200px;
+		border:0px solid black;}
+
+	.logos, .footing, .wsc{display: inline-block;}
+
+	@media only screen and (max-width: 600px){
+		.logos, .footing, .wsc{display: block;
+			float:left;}
+
+	}
+
+	.text{text-align: center;
+		font-size: 150%;
+		font-family: 'Sofia';}
+
 	</style>
 </head>
 <body>
 	<header>
-		<section><img class="dp" src="images/family/1.JPG">
+		<section><img class="dp" src="images/1.jpg">
 		</section>
 		<section id="info">
 			Edward Louis<br>
@@ -122,29 +143,28 @@
 	<section>
 		<h1 class="heading"> I am </h1>
 		<details>
-  <summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. <span>Show More</span></summary>
-  <p><table class="table">
-  		<tr><td>Age</td><td>26</td></tr>
-  		<tr><td>Height</td><td>5.5 inches</td></tr>
-  		<tr><td>Vitals</td><td>32-26-34</td></tr>
-  		<tr><td>Hair</td><td>Brown</td></tr>
-  		<tr><td>Complexion</td><td>Wheatish</td></tr>
-  		<tr><td>Shoe Size</td><td>6</td></tr>
-  </table></p>
-	   </details>
+  <summary>After 8 years of diversified experience, I have started my own company - Widespread Creation
+Pvt.Ltd. in 2017. We aimed to be a One-Stop solution for production and marketing
+requirements. Through constant endeavour, WSC aspires to create its mark in the industry and
+guarantee client satisfaction while working towards a long-lasting relationship with them. <span>Show More</span></summary>
+  <p class="text">Because we don’t stop after a client's appreciation, we work until both of us are satisfied.
+	</p>   </details>
 	</section>
 	<hr>
 	<section>
 		<h1 class="heading"> Glimpse of Work</h1>
-		<a href="images/family/1.JPG" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/1.JPG" onclick="onClick(this)";></a>
-		<a href="images/family/2.JPG" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/2.JPG" onclick="onClick(this)";></a>
-		<a href="images/family/3.JPG" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/3.JPG" onclick="onClick(this)";></a>
-		<a href="images/family/4.JPG" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/4.JPG" onclick="onClick(this)";></a>
-		<a href="images/family/5.JPG" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/family/5.JPG" onclick="onClick(this)";></a>
+		<a href="images/1.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/1.jpg" onclick="onClick(this)";></a>
+		<a href="images/2.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/2.jpg" onclick="onClick(this)";></a>
+		<a href="images/3.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/3.jpg" onclick="onClick(this)";></a>
+		<a href="images/4.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/4.jpg" onclick="onClick(this)";></a>
+		<a href="images/5.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/5.jpg" onclick="onClick(this)";></a>
 		
+		<a href="images/6.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/6.jpg" onclick="onClick(this)";></a>
+		<a href="images/7.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/7.jpg" onclick="onClick(this)";></a>
+		<a href="images/8.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/8.jpg" onclick="onClick(this)";></a>
+		<a href="images/9.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/9.jpg" onclick="onClick(this)";></a>
+		<a href="images/10.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/10.jpg" onclick="onClick(this)";></a>		
+		<a href="images/11.jpg" data-lightbox="mygallery" data-title="Some Text Here"><img class ="wrk-images" src="images/11.jpg" onclick="onClick(this)";></a>
 		<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 		<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095; </button>
 	</section>
@@ -184,11 +204,11 @@
 	<hr>
 	<footer>
 		<h1 class="heading"> Follow Me On</h1>
-		<a href="#"><img src="images/twitter.png" class="logos" height="50px" width="50px"></a>
-		<a href="#"><img src="images/fb.png" class="logos"></a>
-		<a href="#"><img src="images/insta.png" class="logos"></a>
-		<a href="#"><img src="images/youtube.png" class="logos"></a>
-		<a href="#"><img style="float:right;margin-right: 5%;" src="images/wsc.jpg" title="Widespread Creation" class="logos" alt="Wisespread Creation" height="200px" width="200px"></a>
+		<a href="https://www.linkedin.com/in/pareikshit-mishra-4174b17b/" target="_blank"><img src="images/lin.png" class="logos"></a>
+		<a href="https://www.facebook.com/widespreadcreation/" target="_blank"><img src="images/fb.png" class="logos"></a>
+		<a href="https://www.instagram.com/widespreadcreation/" target="_blank"><img src="images/insta.png" class="logos"></a>
+		<a href="https://www.youtube.com/channel/UC6o30-i5G3yeX75J72k6huQ" target="_blank"><img src="images/youtube.png" class="logos"></a> 
+		<a href="#"><img src="images/wsc-logo.png" class="wsc" title="Widespread Creation" alt="Wisespread Creation" height="200px" width="200px"></a>
 		
 	</footer>
 <script>
@@ -220,6 +240,5 @@
 }
 
 </script>
-
 </body>
 </html>
