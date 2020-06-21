@@ -14,9 +14,8 @@
 			background-color:#F9B956;
 		}
 		
-		.dp {width:30%;
-			height:30vh;
-			border-radius:15px 50px;
+		.dp {width:30vw;
+			height:auto;
 			margin-left:35%;}
 
 		#info{font-size: 150%;
@@ -173,7 +172,7 @@
   color: black;
 }
 
-.topnav a.active {
+.topnav a.active1 {
   background-color: #4CAF50;
   color: white;
 }
@@ -221,18 +220,32 @@
   background-color: #ccc;
 }
 
+
 .content {
   padding: 0 18px;
-  display: none;
+  background-color: white;
+  max-height: 0;
   overflow: hidden;
-  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 	
 	</style>
 </head>
 <body>
 	<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
+  <a href="#home" class="active1">Home</a>
   <a href="#about">About</a>
   <a href="#gallery">Gallery</a>
   <a href="#about">Videos</a>
@@ -243,7 +256,7 @@
   </a>
 </div>
 	<header>
-		<section><img id="profile" class="dp" src="images/1.JPG">
+		<section><img id="profile" class="dp" src="images/dp.png">
 		</section>
 		<section id="info">
 			Pareikshit Mishra<br>
@@ -259,7 +272,7 @@
 	<section>
 		<h1 class="heading" id="about"> My Short Intro </h1>
 		<button type="button" class="collapsible">After 8 years of diversified experience, I have started my own company - Widespread Creation
-Pvt.Ltd. in 2017. We aimed to be<span> Show More...</span></button>
+Pvt.Ltd. in 2017. We aimed to be...</button>
 		<div class="content">
   			<p>a One-Stop solution for production and marketing
 requirements. Through constant endeavour, WSC aspires to create its mark in the industry and
@@ -372,10 +385,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
