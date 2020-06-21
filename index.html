@@ -240,6 +240,14 @@
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+.dp, .info{position:absolute;
+top:150px;
+}
+
+#myVideo{width:100%;
+height:100%;
+opacity:0.2;}
 	
 	</style>
 </head>
@@ -256,12 +264,16 @@
   </a>
 </div>
 	<header>
-		<section><img id="profile" class="dp" src="images/dp.png">
-		</section>
+		<video autoplay muted loop id="myVideo">
+  <source src="images/video2.mp4" type="video/mp4">
+</video>
+		<section class="pro"><img id="profile" class="dp" src="images/dp.png">
+		
 		<section id="info">
 			Pareikshit Mishra<br>
 			Founder<br>
 			Widespread Creation Pvt. Ltd.
+		</section>
 		</section>
 		<section>
 			<a href="tel:9137489984"><input type="button" name="submit" value="Call Me" height="30px" width="15px" class="contact"></a>
